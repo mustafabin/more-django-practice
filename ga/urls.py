@@ -26,5 +26,6 @@ router.register(r'student',StudentViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('api-auth/', include('rest_framework.urls')),
     path('admin/', admin.site.urls),
 ]
